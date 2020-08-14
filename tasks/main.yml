@@ -8,5 +8,5 @@
 - name: remove swap from fstab
   lineinfile:
     path: '/etc/fstab'
-    regexp: ' swap '
+    regexp: '\sswap\s'
     state: 'absent'
